@@ -22,11 +22,9 @@ pipeline{
        success{
            
                 publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: '/home/shubham/GIT-WORKSPACE/JenkinsTesting', reportFiles: 'report.htm', reportName: 'HTML Report', reportTitles: 'Report'])
+
+             emailext body: 'all the stages has passed', subject: 'testing', to: 'kantusjee123123@gmail.com'
                   }
             }
-     post{
-             success{
-                emailext body: 'all the stages has passed', subject: 'testing', to: 'kantusjee123123@gmail.com'
-             }
-            }  
+   
        }
