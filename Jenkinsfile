@@ -17,7 +17,13 @@ pipeline{
            steps{
                sh "go build"
               }
-
            }
          }
+     post {
+       success{
+                emailext body: 'all the stages has passed', subject: 'testing', to: 'kantusjee123123@gmail.com'
+             }
+
+
+          }
        }
