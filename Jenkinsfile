@@ -28,8 +28,5 @@ pipeline{
              success{
                 emailext body: 'all the stages has passed', subject: 'testing', to: 'kantusjee123123@gmail.com'
              }
-            }
-
-
-          }
+            }  
        }
