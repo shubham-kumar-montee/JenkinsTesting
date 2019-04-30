@@ -6,7 +6,7 @@ import (
 	
 )
 
-func  Testcheck(t *testing.T) {
+func  TestCheck(t *testing.T) {
 	fmt.Println("Entering TestInit")
 	name:=maincheck()
         if(name!="shubham"){
