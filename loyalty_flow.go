@@ -6,7 +6,8 @@ func main(){
 maincheck()
 }
 
-func maincheck(){
+func maincheck()(name string){
+name="shubham"
 fmt.Println("Hello bhai log")
-
+return
 }
