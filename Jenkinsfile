@@ -20,8 +20,7 @@ pipeline{
          }
      post {
        success{
-                archive (includes: 'pkg/*.gem')
-                publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: '/home/shubham/GIT-WORKSPACE/JenkinsTesting', reportFiles: 'report.htm', reportName: 'HTML Report', reportTitles: 'Report'])
+              publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: '/home/shubham/GIT-WORKSPACE/JenkinsTesting', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: 'REPORT'])
 
              emailext body: 'all the stages has passed', subject: 'testing', to: 'kantusjee123123@gmail.com'
                   }
