@@ -19,6 +19,10 @@ pipeline{
            }
          }
      post {
+
+ always {
+            step([$class: 'Publisher', reportFilenamePattern: 'testng.xml'])
+        }
        success{
              publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: '/home/shubham/GIT-WORKSPACE/JenkinsTesting/HTML Report', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: 'REPORT HAI BHAI'])
 
