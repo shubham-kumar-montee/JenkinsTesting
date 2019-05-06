@@ -9,7 +9,7 @@ pipeline{
    stages{
        stage("Testing Stage"){
            steps{
-               sh "go test"
+               sh "go test -v 2>&1 | go-junit-report > report.xml"
                 }
              }
        stage("Building Application"){
