@@ -1,0 +1,4 @@
+{
+	"logpath":"./logs/debug.log",
+	"downloadsPath":"./downloads/"
+}
