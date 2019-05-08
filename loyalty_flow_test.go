@@ -9,7 +9,7 @@ import (
 func  TestCheck(t *testing.T) {
 	fmt.Println("Entering TestInit")
 	name:=maincheck()
-        if(name!="shubham1"){
+        if(name!="shubham"){
      t.Errorf("returned value not the same")
 }
 	
